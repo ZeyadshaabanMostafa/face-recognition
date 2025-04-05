@@ -1,0 +1,281 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #003366;
+    margin: 20px 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004085;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+
+.hero {
+    margin-top: 50px; /* تقليل المسافة العلوية لجعل العنصر أقرب للمحتوى */
+    padding: 50px 50px 10px; /* تغيير الـ padding بحيث يكون هناك مسافة أكبر من الجانبين */
+    background-color: #ffffff; /* خلفية بيضاء ناعمة */
+    border-radius: 15px; /* زيادة تدوير الحواف لإعطاء مظهر أنيق */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* إضافة ظل ناعم حول العنصر */
+    text-align: center; /* محاذاة النص في المركز */
+}
+.hero h2 {
+    font-size: 32px; /* حجم خط أكبر للعناوين */
+    color: #007bff; /* لون العنوان أزرق */
+    font-weight: bold; /* جعل الخط عريض */
+}
+
+.hero p {
+    font-size: 18px; /* حجم الخط للأوصاف */
+    color: #555; /* لون نص داكن ليكون أكثر وضوحًا */
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #ff9900;
+}
+
+.services {
+    padding: 20px;
+    text-align: center;
+}
+
+.service-item {
+    background-color: #ddd;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 250px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.service-item:hover {
+    background-color: #bbb;
+    cursor: pointer;
+}
+
+.card {
+    margin: 0; /* إزالة أي هامش إضافي */
+    width: 300px; /* تحديد عرض الـ card */
+    border-radius: 10px; /* جعل الزوايا دائرية */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة تأثير الظل */
+}
+
+
+.card:hover {
+    transform: scale(1.05); /* تكبير الـ card قليلاً عند المرور عليها */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* زيادة تأثير الظل عند التفاعل */
+}
+
+
+.card-img-top {
+    height: 200px; /* تحديد ارتفاع الصورة */
+    object-fit: cover; /* ضمان أن الصورة تملأ الـ card بشكل جيد */
+}
+
+.card-body {
+    padding: 15px; /* تقليل المسافة داخل الـ card */
+    text-align: center; /* محاذاة النص في المنتصف */
+}
+
+.card-title {
+    font-size: 1.2rem; /* حجم الخط للعناوين */
+    font-weight: bold; /* جعل العنوان عريضًا */
+    color: #007bff; /* لون العنوان */
+}
+
+
+.card-text {
+    font-size: 0.9rem; /* تقليل حجم الخط للنص داخل الـ card */
+    color: #555; /* جعل النص أكثر وضوحًا */
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* توسيط الـ cards أفقيًا */
+    gap: 10px; /* تقليل المسافة بين الـ cards */
+    margin-top: 30px;
+}
+
+
+
+.card-body a {
+    color: #004085;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.card-body a:hover {
+    text-decoration: underline;
+    color: #002752;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* في الشاشات الصغيرة، نعرض الـ cards فوق بعض */
+        align-items: center; /* تأكيد توسيط الـ cards */
+    }
+
+    .card {
+        width: 90%; /* في الشاشات الصغيرة، تأخذ كل بطاقة عرض 90% من الشاشة */
+    }
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.contact-form {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* إضافة مسافة أسفل النموذج */
+}
+
+.contact-form h4 {
+    color: #007bff;}
+
+    .contact-form .btn-primary {
+        background-color: #007bff;
+        border: none;
+        width: 100%;
+    }
+
+.contact-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    color: #333;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #007bff;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+
+
+/* ✅ تنسيق الفوتر */
+footer {
+    background: #004085;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: relative; /* للتأكد أنه في أسفل الصفحة */
+    margin-top: 40px;
+}
+
+/* ✅ التأكد من أن الصفحة لا تغطيها أي عناصر */
+.container-fluid {
+    min-height: 100vh; /* يجعل الصفحة تمتد لكامل الشاشة */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* يضمن أن الفوتر بعيد عن المحتوى */
+    align-items: center;
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+

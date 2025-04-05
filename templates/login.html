@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الدخول - وزارة الداخلية</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .login-container h2 {
+            text-align: center;
+            color: #333;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .btn-primary {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+        }
+        .forgot-password {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .forgot-password a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>تسجيل الدخول - وزارة الداخلية</h2>
+        <form onsubmit="return validateForm()">
+            <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                <input type="text" id="username" class="form-control" name="username" placeholder="أدخل اسم المستخدم" required>
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                <input type="password" id="password" class="form-control" name="password" placeholder="أدخل كلمة المرور" required>
+            </div>
+            <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
+            <div class="forgot-password">
+                <p><a href="#">هل نسيت كلمة المرور؟</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            let password = document.getElementById("password").value;
+            if (password.length < 6) {
+                alert("يجب أن تحتوي كلمة المرور على 6 أحرف على الأقل");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

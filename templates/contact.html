@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا</title>
+    
+    <!-- استدعاء ملفات التنسيق -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.min.css"> <!-- مكتبة FontAwesome للأيقونات -->
+    <link rel="stylesheet" href="style1.css"> <!-- استخدام نفس ملف التنسيق للصفحة الرئيسية -->
+
+</head>
+<body>
+
+    <!-- ✅ رأس الصفحة -->
+    <header>
+        <img src="OIP.jpeg" alt="الشعار" width="80">
+        <nav>
+            <ul>
+                
+                <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="#">حول</a></li>
+                <li><a href="contact.html" class="active">التواصل</a></li>
+                <li><a href="services.html">الخدمات</a></li>
+                <li><a href="home1.html">الرئيسية</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ✅ القسم الرئيسي -->
+    <main class="container mt-5">
+        <section class="hero text-center">
+            <h2>ابقَ على تواصل معنا</h2>
+            <p>يمكنك التواصل معنا عبر البريد أو الهاتف أو من خلال النموذج أدناه.</p>
+        </section>
+
+        <section class="row mt-4">
+            <!-- ✅ نموذج التواصل -->
+            <div class="col-md-6">
+                <div class="contact-form p-4 shadow rounded">
+                    <h4>أرسل لنا رسالة</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">الاسم الكامل</label>
+                            <input type="text" class="form-control" id="name" placeholder="أدخل اسمك">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="email" placeholder="example@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">رسالتك</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="اكتب رسالتك هنا"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">إرسال</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ✅ معلومات التواصل -->
+            <div class="col-md-6">
+                <div class="contact-info p-4 shadow rounded bg-light">
+                    <h4>معلومات التواصل</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> العنوان: 123 شارع الشرطة، القاهرة</p>
+                    <p><i class="fas fa-phone"></i> الهاتف: +20 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> البريد: info@police.com</p>
+
+                    <h4>تابعنا على</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ✅ تذييل الصفحة -->
+    <footer class="text-center mt-5 p-3">
+        <p>جميع الحقوق محفوظة &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
